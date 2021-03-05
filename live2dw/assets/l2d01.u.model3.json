@@ -1,86 +1,56 @@
 {
-  "Version": 3,
-  "FileReferences": {
-    "Moc": "l2d01.u.moc3",
-    "Textures": [
+  "type": "Live2D Model Setting",
+	"name": "ailin",
+    "model": "l2d01.u.moc3",
+    "textures": [
       "textures/texture_00.png"
     ],
-    "Physics": "l2d01.u.physics3.json",
-    "Motions": {
-      "Idle": [
+    "physics": "l2d01.u.physics3.json",
+    "motions": {
+      "idle": [
         {
-          "File": "motions/Mgirl07_stand.motion3.json",
-          "MotionDuration": 10000,
-          "Priority": 9
-        },
-        {
-          "File": "motions/Mgirl07_qidao.motion3.json",
-          "Sound": "SFX/qidao.ogg",
-          "SoundVolume": 0.0278959181,
-          "Text": "愿所有牺牲者得以安息……",
-          "MotionDuration": 10000,
-          "Priority": 5
-        },
-        {
-          "File": "motions/Mgirl07_xiugongpai_a.motion3.json",
-          "MotionDuration": 10000,
-          "Priority": 2
+          "file": "motions/Mgirl07_stand.motion3.json",
+          "fade_in": 5000,
+          "fade_out": 5000
         }
       ],
       "Tap_q": [
         {
-          "File": "motions/Mgirl07_nu.motion3.json"
+          "file": "motions/Mgirl07_nu.motion3.json"
         }
       ],
       "Hit": [
         {
-          "Name": "xianqunzi",
-          "File": "motions/Mgirl07_xianqunzi_a.motion3.json"
+          "file": "motions/Mgirl07_xianqunzi_a.motion3.json"
         }
       ],
       "Tap_head": [
         {
-          "File": "motions/Mgirl07_ganga_c.motion3.json"
+          "file": "motions/Mgirl07_ganga_c.motion3.json"
         }
       ],
       "Tap_shizijia": [
         {
-          "File": "motions/Mgirl07_wuzhu.motion3.json"
+          "file": "motions/Mgirl07_wuzhu.motion3.json"
         }
       ]
-    }
-  },
-  "HitAreas": [
+    },
+  "hit_areas": [
     {
-      "Name": "q",
-      "Id": "D_PSD_127",
-      "Motion": "Tap_q"
+      "id": "D_PSD_127",
+      "name": "Tap_q"
     },
     {
-      "Name": "Qunzi",
-      "Id": "D_PSD_90"
+      "name": "Hit",
+      "id": "D_PSD_90"
     },
     {
-      "Name": "Head",
-      "Id": "D_PSD_37",
-      "Motion": "Tap_head"
+      "id": "D_PSD_37",
+      "name": "Tap_head"
     },
     {
-      "Name": "shizijia",
-      "Id": "D_PSD1_09",
-      "Motion": "Tap_shizijia"
+      "id": "D_PSD1_09",
+      "name": "Tap_shizijia"
     }
-  ],
-  "HitParams": [
-    {
-      "Name": "qunzi",
-      "Id": "PARAM_SKIRT_DEFORM",
-      "HitArea": "Qunzi",
-      "Axis": 1,
-      "Factor": 0.0,
-      "ReleaseType": 0,
-      "MaxMtn": "Hit:xianqunzi"
-    }
-  ],
-  "LipSync": true
+  ]
 }
